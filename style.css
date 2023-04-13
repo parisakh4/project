@@ -1,0 +1,84 @@
+.card-body {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(226, 240, 254) 0%,
+    rgb(255, 247, 228) 90%
+  );
+
+  border-radius: 6px;
+  border: solid #005792;
+}
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #00204a;
+  padding-top: 10px;
+}
+.temp {
+  font-size: 50px;
+  color: #005792;
+}
+.temp .fa-solid {
+  font-size: 60px;
+  padding-left: 130px;
+  position: relative;
+  top: 10px;
+}
+h2 {
+  color: #00204a;
+  padding-top: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tempInfo {
+  color: #235784;
+}
+
+.enter {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  width: 83%;
+  border: solid #00204a;
+  border-radius: 4px;
+}
+.button {
+  background-color: #235784;
+  color: #ffe3b0;
+  border: none;
+  border-radius: 4px;
+  transition: all 150ms ease-in-out;
+  padding: 2px;
+}
+.button:hover {
+  background-color: #ffe3b0;
+  color: #235784;
+  border: 2px solid #235784;
+}
+
+li {
+  padding: 8px;
+  list-style: none;
+  position: relative;
+  top: 10px;
+  font-weight: 500;
+}
+
+.forcast {
+  font-weight: lighter;
+}
+.fa-solid {
+  padding-left: 10px;
+  padding-top: 15px;
+  font-size: 30px;
+  position: relative;
+  top: 0;
+  color: #005792;
+}
+
+.weatherapp {
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  border: 1px solid #235784;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px;
+  max-width: 800px;
+}
