@@ -79,6 +79,12 @@ li {
   border: 1px solid #235784;
   border-radius: 5px;
   padding: 15px;
-  margin: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
   max-width: 800px;
+}
+.git {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
 }
