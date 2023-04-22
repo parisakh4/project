@@ -1,5 +1,5 @@
-function showTime() {
-  let current = new Date();
+function showTime(timestamp) {
+  let current = new Date(timestamp);
   let days = [
     "Sunday",
     "Monday",
@@ -12,7 +12,6 @@ function showTime() {
   let day = days[current.getDay()];
   let hour = current.getHours();
   let minute = current.getMinutes();
-  let time = document.querySelector("#show-time");
 
   if (hour < 10) {
     hour = `0${hour}`;
@@ -20,9 +19,8 @@ function showTime() {
   if (minute < 10) {
     minute = `0${minute}`;
   }
-  time.innerHTML = `${day} ${hour}:${minute}`;
+  return `${day} ${hour}:${minute}`;
 }
-showTime();
 
 function showTemperature(response) {
   console.log(response.data);
@@ -33,12 +31,16 @@ function showTemperature(response) {
   let h1 = document.querySelector("h1");
   h1.innerHTML = response.data.name;
 
+  let dateElement = document.querySelector("#tell-time");
+
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+
+  dateElement.innerHTML = showTime(response.data.dt * 1000);
 }
 
 function search(theCity) {
