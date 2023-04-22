@@ -21,115 +21,121 @@
   </head>
   <body>
     <div class="container">
-      <div class="weatherapp">
-        <div class="row">
-          <div class="col-7">
-            <h1 class="city">Tehran,Tehran Province</h1>
-            <div class="card">
-              <div class="card-body">
-                <div class="clearfix temp">
-                  <span id="temp">9</span>
+      <div class="wrapper">
+        <div class="weatherapp">
+          <div class="row">
+            <div class="col-7">
+              <h1 class="city">Tehran,Tehran Province</h1>
+              <div class="card">
+                <div class="card-body">
+                  <div class="clearfix temp">
+                    <span id="temp">9</span>
 
-                  <a href="#" id="celsius-link" class="active units">℃</a
-                  ><span class="units"> | </span
-                  ><a href="#" class="units" id="fahrenheit-link">F</a>
+                    <a href="#" id="celsius-link" class="active units">℃</a
+                    ><span class="units"> | </span
+                    ><a href="#" class="units" id="fahrenheit-link">F</a>
 
-                  <img
-                    src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                    id="icon"
-                    alt="Clear"
-                    class="float-right"
-                  />
+                    <img
+                      src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                      id="icon"
+                      alt="Clear"
+                      class="float-right"
+                    />
+                  </div>
+                  <div class="tempInfo" id="Precipitation">
+                    Precipitation 4%
+                  </div>
+                  <div class="tempInfo">
+                    Humidity <span id="humidity">46</span>%
+                  </div>
+                  <div class="tempInfo">Wind <span id="wind">0</span> km/h</div>
                 </div>
-                <div class="tempInfo" id="Precipitation">Precipitation 4%</div>
-                <div class="tempInfo">
-                  Humidity <span id="humidity">46</span>%
-                </div>
-                <div class="tempInfo">Wind <span id="wind">0</span> km/h</div>
               </div>
+              <h2>Weather</h2>
+              <div class="info" id="show-time">
+                Last updated <span id="tell-time">Saturday 22:00</span>
+              </div>
+              <div class="info">
+                <span id="description">Clear with Periodic Cloud</span>
+              </div>
+              <form id="search-form">
+                <input
+                  type="tex"
+                  placeholder="Enter City Name"
+                  autofocus
+                  class="enter"
+                  id="city-enter"
+                />
+                <input type="submit" value="Search" class="button" />
+              </form>
             </div>
-            <h2>Weather</h2>
-            <div class="info" id="show-time">
-              Last updated <span id="tell-time">Saturday 22:00</span>
+
+            <div class="col-2">
+              <ul>
+                <li>
+                  Sun
+
+                  <div class="forcast">15° 6°</div>
+                </li>
+                <li>
+                  Mon
+
+                  <div class="forcast">15° 6°</div>
+                </li>
+                <li>
+                  Tue
+                  <div class="forcast">17° 7°</div>
+                </li>
+                <li>
+                  Wed
+
+                  <div class="forcast">17° 7°</div>
+                </li>
+                <li>
+                  Thu
+
+                  <div class="forcast">19° 9°</div>
+                </li>
+                <li>
+                  Fri
+
+                  <div class="forcast">19° 9°</div>
+                </li>
+              </ul>
             </div>
-            <div class="info">
-              <span id="description">Clear with Periodic Cloud</span>
+            <div class="col-2">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-cloud-rain"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-sun"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-cloud-rain"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-sun"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-cloud-sun"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-sun"></i>
+                </li>
+              </ul>
             </div>
-            <form id="search-form">
-              <input
-                type="tex"
-                placeholder="Enter City Name"
-                autofocus
-                class="enter"
-                id="city-enter"
-              />
-              <input type="submit" value="Search" class="button" />
-            </form>
-          </div>
-
-          <div class="col-2">
-            <ul>
-              <li>
-                Sun
-
-                <div class="forcast">15° 6°</div>
-              </li>
-              <li>
-                Mon
-
-                <div class="forcast">15° 6°</div>
-              </li>
-              <li>
-                Tue
-                <div class="forcast">17° 7°</div>
-              </li>
-              <li>
-                Wed
-
-                <div class="forcast">17° 7°</div>
-              </li>
-              <li>
-                Thu
-
-                <div class="forcast">19° 9°</div>
-              </li>
-              <li>
-                Fri
-
-                <div class="forcast">19° 9°</div>
-              </li>
-            </ul>
-          </div>
-          <div class="col-2">
-            <ul>
-              <li>
-                <i class="fa-solid fa-cloud-rain"></i>
-              </li>
-              <li>
-                <i class="fa-solid fa-sun"></i>
-              </li>
-              <li>
-                <i class="fa-solid fa-cloud-rain"></i>
-              </li>
-              <li>
-                <i class="fa-solid fa-sun"></i>
-              </li>
-              <li>
-                <i class="fa-solid fa-cloud-sun"></i>
-              </li>
-              <li>
-                <i class="fa-solid fa-sun"></i>
-              </li>
-            </ul>
           </div>
         </div>
+        <p class="git">
+          <a href="https://github.com/parisakh4/project" target="_blank"
+            >Open Source Code</a
+          >
+          by Parisa Khosravi
+        </p>
       </div>
     </div>
-    <p class="git">
-      <a href="https://github.com/parisakh4/project" target="_blank"
-        >GitHub Repository</a
-      >
-    </p>
+
     <script src="week5.js"></script>
   </body>
 </html>
