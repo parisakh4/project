@@ -23,6 +23,12 @@ h1 {
   position: relative;
   top: 10px;
 }
+
+.units {
+  position: relative;
+  font-size: 16px;
+  top: -24px;
+}
 h2 {
   color: #00204a;
   padding-top: 15px;
