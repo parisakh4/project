@@ -107,8 +107,15 @@ li {
 
 .whole-forcast {
   position: relative;
-  top: 50px;
+  top: 40px;
+  left: 40px;
+  padding: 8px;
+}
+
+.forcast-icon {
+  position: absolute;
   left: 50px;
+  bottom: 15px;
 }
 .forcast-date,
 .forcast-min {
@@ -116,5 +123,5 @@ li {
 }
 
 .forcast-max {
-  margin-left: 30px;
+  margin-left: 0px;
 }
