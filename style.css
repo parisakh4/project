@@ -23,10 +23,12 @@ h1 {
   font-size: 16px;
   top: -24px;
 }
-h2 {
-  color: #00204a;
+.additional {
   padding-top: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-bottom: 10px;
+  font-size: medium;
+  font-weight: bold;
+  opacity: 80%;
 }
 
 .tempInfo {
@@ -114,8 +116,8 @@ li {
 
 .forcast-icon {
   position: absolute;
-  left: 50px;
-  bottom: 15px;
+  left: 55px;
+  bottom: 20px;
 }
 .forcast-date,
 .forcast-min {
@@ -124,4 +126,7 @@ li {
 
 .forcast-max {
   margin-left: 0px;
+}
+.info {
+  opacity: 70%;
 }
