@@ -94,15 +94,6 @@ li {
   font-size: small;
 }
 
-.active {
-  color: #005792;
-  cursor: default;
-}
-
-.active:hover {
-  text-decoration: none;
-}
-
 .forcast-icon {
   display: inline;
 }
